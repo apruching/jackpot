@@ -1,0 +1,826 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*==========================
+ common css ends
+============================*/
+/*============================
+ variable ends
+ =============================*/
+/*============================
+ mixing ends
+ =============================*/
+.back-to-top {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f4a613;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 24px;
+}
+/*==================back-to-top end=====================*/
+.nav-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f4a613 !important;
+  animation: smoth linear 0.5s;
+  padding-top: 10px;
+}
+@keyframes smoth {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/*==================nav-fix end=====================*/
+/*==================navbar starts=====================*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 10px;
+  background: #150035;
+  z-index: 99999;
+}
+.navbar .navbar-collapse {
+  margin-top: 60px;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  font-family: 'Nunito', sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  color: #944bff;
+  margin: 0 27px;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #a60084;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+  color: #a60084;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item span {
+  text-transform: uppercase;
+}
+.navbar .navbar-collapse .btn {
+  font-family: 'Nunito', sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+.navbar .navbar-collapse .btn:hover:first-of-type {
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  box-shadow: 0px 4px 0px 0px rgba(148, 77, 255, 0.8);
+}
+.navbar .navbar-collapse .btn:hover:last-of-type {
+  box-shadow: 0px 4px 0px 0px rgba(107, 4, 87, 0.8);
+  background: linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+}
+.navbar .navbar-collapse .btn:first-of-type {
+  margin-left: 63px;
+  margin-right: 20px;
+  padding: 15px 30px 14px 30px;
+  background: linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+  color: #ffff;
+  border-radius: 4px;
+  text-shadow: 3px 0px 4px #fff;
+  box-shadow: 0px 4px 0px 0px rgba(107, 4, 87, 0.8);
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.navbar .navbar-collapse .btn:last-of-type {
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  padding: 15px 30px 14px 30px;
+  color: #ffff;
+  border-radius: 4px;
+  text-shadow: 3px 0px 4px #fff;
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  box-shadow: 0px 4px 0px 0px rgba(148, 77, 255, 0.8);
+}
+/*==================navbar ends=====================*/
+/*==================banner starts=====================*/
+#banner {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  background: #150035;
+  position: relative;
+}
+#banner .banner-bg {
+  position: absolute;
+  top: 170px;
+  left: 0;
+}
+#banner .banner-text {
+  padding-top: 95px;
+}
+#banner .banner-text h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+}
+#banner .banner-text h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 331px;
+  color: #f4a613;
+  background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px #4d0148);
+  margin-top: -46px;
+  margin-bottom: 0;
+  margin-bottom: -28px;
+}
+#banner .banner-text p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  padding: 0 50px 0 0;
+}
+#banner .banner-text h3 {
+  text-align: center;
+}
+#banner .banner-text h3 a {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 15px 30px 14px 30px;
+  color: #ffff;
+  border-radius: 4px;
+  text-shadow: 1px 0px 1px #fff;
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  box-shadow: 0px 4px 0px 0px rgba(148, 77, 255, 0.8);
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#banner .banner-text h3 a:hover {
+  box-shadow: 0px 4px 0px 0px rgba(107, 4, 87, 0.8);
+  background: linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+}
+/*==================banner ends=====================*/
+/*==================game starts=====================*/
+#game {
+  position: relative;
+  background: #0b001b;
+  padding-bottom: 100px;
+}
+#game .game-item {
+  filter: drop-shadow(0px 6px 0px #3a0090);
+}
+#game .game-item .flow {
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 96%);
+  clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 96%);
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 100%;
+}
+#game .game-item .flow .border-shadow {
+  -webkit-box-shadow: inset 10px 0px 50px 0px rgba(31, 7, 67, 0.5);
+  -moz-box-shadow: inset 10px 0px 50px 0px rgba(31, 7, 67, 0.5);
+  box-shadow: inset 10px 0px 50px 0px rgba(31, 7, 67, 0.5);
+  background: #944bff;
+  background: -moz-linear-gradient(left, #944bff 0%, #570dc8 100%);
+  background: -webkit-linear-gradient(left, #944bff 0%, #570dc8 100%);
+  background: linear-gradient(to right, #944bff 0%, #570dc8 100%);
+  padding: 45px 15px;
+  filter: drop-shadow(30px 10px 4px #4444dd);
+}
+#game .game-item .flow .border-shadow .game-content h3 {
+  color: #fcb100;
+  background: -webkit-linear-gradient(top, #fdb125 45%, #e07e1e 48%, #fcb100 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 18px;
+  text-align: center;
+}
+#game .game-item .flow .border-shadow .game-content h4 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 10px;
+  text-shadow: 5px 5px 0px rgba(88, 19, 184, 0.8);
+  text-align: center;
+  text-transform: capitalize;
+}
+#game .game-item .flow .border-shadow .game-content p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+#game .game-heading {
+  padding-top: 100px;
+}
+#game .game-heading h4 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px #4d0148);
+  margin: 160px 0 60px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+#game .game-about .game-image {
+  position: relative;
+}
+#game .game-about .game-image:hover .game-option {
+  opacity: 1;
+}
+#game .game-about .game-image .game-option {
+  width: 101%;
+  height: 101%;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  padding-top: 160px;
+}
+#game .game-about .game-image .game-option h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  padding-bottom: 50px;
+  text-transform: capitalize;
+  text-align: center;
+}
+#game .game-about .game-image .game-option h4 {
+  text-align: center;
+}
+#game .game-about .game-image .game-option h4 a {
+  padding: 14px 30px;
+  background: #9e4efc;
+  background: -moz-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+  background: -webkit-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+  background: linear-gradient(to bottom, #9e4efc 0%, #570dc8 100%);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  -webkit-box-shadow: 0px 6px 0px 0px #3a0090;
+  -moz-box-shadow: 0px 6px 0px 0px #3a0090;
+  box-shadow: 0px 6px 0px 0px #3a0090;
+  text-shadow: 5px 5px 0px rgba(88, 19, 184, 0.8);
+  text-transform: capitalize;
+}
+/*==================game ends=====================*/
+/*============================
+spin starts here 
+ =============================*/
+#spin {
+  background: #150035;
+  padding-top: 97px;
+  padding-bottom: 27px;
+}
+#spin .spin-text h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 48px;
+  color: #f4a613;
+  font-weight: 400;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px #4d0148);
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+#spin .spin-text p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+  padding-bottom: 5px;
+}
+#spin .spin-text p:last-of-type {
+  margin-bottom: 57px;
+}
+#spin .spin-text a {
+  font-family: 'Anton', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 20px 30px 14px 30px;
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  border-radius: 5px;
+}
+/*============================
+spin ends here 
+ =============================*/
+/*============================
+pricing starts here 
+ =============================*/
+#pricing {
+  padding-top: 97px;
+  padding-bottom: 80px;
+  background: #0b001b;
+}
+#pricing .pricing-heading h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #f4a613;
+  text-transform: capitalize;
+  background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 25px #4d0148);
+  margin-bottom: 0;
+  padding-bottom: 88px;
+}
+#pricing .pricing-details .pricing-text {
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  position: relative;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#pricing .pricing-details .pricing-text:hover {
+  transform: translateY(10%);
+}
+#pricing .pricing-details .pricing-text:hover .feature {
+  opacity: 1;
+}
+#pricing .pricing-details .pricing-text:hover .btn a {
+  background: linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+}
+#pricing .pricing-details .pricing-text .feature {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+  width: 100%;
+  border-radius: 5px;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#pricing .pricing-details .pricing-text .feature h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+#pricing .pricing-details .pricing-text h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  text-transform: capitalize;
+  padding-top: 54px;
+}
+#pricing .pricing-details .pricing-text h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: -2px;
+  margin-bottom: -8px;
+}
+#pricing .pricing-details .pricing-text h5 {
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  position: relative;
+}
+#pricing .pricing-details .pricing-text h5 span {
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#pricing .pricing-details .pricing-text h5::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border: 1px solid #0b001b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#pricing .pricing-details .pricing-text ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 40px;
+}
+#pricing .pricing-details .pricing-text ul li {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+#pricing .pricing-details .pricing-text .btn {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  bottom: -27px;
+  transform: translateX(-50%);
+}
+#pricing .pricing-details .pricing-text .btn a {
+  text-decoration: none;
+  padding: 14px 30px;
+  background: #9e4efc;
+  background: -moz-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+  background: -webkit-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+  background: linear-gradient(to bottom, #9e4efc 0%, #570dc8 100%);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  -webkit-box-shadow: 0px 6px 0px 0px #3a0090;
+  -moz-box-shadow: 0px 6px 0px 0px #3a0090;
+  box-shadow: 0px 6px 0px 0px #3a0090;
+  text-shadow: 5px 5px 0px rgba(88, 19, 184, 0.8);
+  display: inline-block;
+  margin-top: 25px;
+}
+/*============================
+pricing ends here 
+ =============================*/
+/*============================
+tournament starts here 
+ =============================*/
+.border-line {
+  border: 1px solid #f4a613;
+  height: 140px;
+}
+#tournament {
+  padding-top: 98px;
+  padding-bottom: 150px;
+  background-color: #150035 !important;
+}
+#tournament .tour-text h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #f4a613;
+}
+#tournament .tour-text .accordion .accordion-item {
+  background: transparent !important;
+}
+#tournament .tour-text .accordion .accordion-item.add-border {
+  border: 1px solid #f4a613;
+}
+#tournament .tour-text .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ffff;
+  background: transparent;
+}
+#tournament .tour-text .accordion .accordion-item .accordion-header .accordion-button:focus {
+  z-index: 3;
+  border: none;
+  box-shadow: none;
+}
+#tournament .tour-text .accordion .accordion-item .accordion-body p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+#tournament .jumbotron .tour-text h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #f4a613;
+}
+#tournament .jumbotron .get-nicer {
+  overflow: auto;
+  height: 280px;
+}
+#tournament .jumbotron .get-nicer .nice-wrapper .idol-name h3 {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #fff;
+}
+#tournament .jumbotron .get-nicer .nice-wrapper .rate h3 {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  padding-right: 20px;
+  color: #fff;
+}
+#tournament .jumbotron .coun_text h4 {
+  padding-top: 36px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#tournament .jumbotron .main-menu {
+  display: flex;
+  margin-bottom: 20px;
+}
+#tournament .jumbotron .main-menu .coundown {
+  border: 1px solid #fcb100;
+  margin-right: 70px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: -20px;
+}
+#tournament .jumbotron .main-menu .coundown span {
+  color: #fcb100;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+#tournament .jumbotron .main-menu .coundown p {
+  color: #fcb100;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  padding: 5px 10px;
+  margin-bottom: 0;
+}
+/*============================
+tournament starts here 
+ =============================*/
+/*============================
+payment starts here 
+ =============================*/
+#payment {
+  padding-bottom: 35px;
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  padding-top: 32px;
+}
+#payment .pay-text h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+}
+#payment .pay-text form input {
+  width: 80%;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #0b001b;
+  background: transparent;
+}
+#payment .pay-text form button {
+  background: transparent;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid #0b001b;
+  padding: 3px;
+}
+#payment .pay-text form button i {
+  font-size: 32px;
+}
+#payment .pay-item h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+}
+#payment .pay-item ul {
+  display: flex;
+  padding-left: 0;
+}
+#payment .pay-item ul li {
+  margin-right: 13px;
+}
+#payment .pay-item ul li:last-child {
+  margin-right: 0;
+}
+/*============================
+payment ends here 
+ =============================*/
+/*============================
+footer starts  here 
+ =============================*/
+#footer {
+  padding-top: 57px;
+  padding-bottom: 68px;
+  background: #150035;
+}
+#footer .footer-about h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  padding-bottom: 5px;
+}
+#footer .footer-about p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding-right: 20px;
+  line-height: 26px;
+}
+#footer .footer-about ul {
+  display: flex;
+  padding-left: 0;
+  padding-top: 12px;
+}
+#footer .footer-about ul li {
+  color: #fff;
+  width: 50px;
+  height: 53px;
+  background: linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+  margin-right: 15px;
+  text-align: center;
+  line-height: 53px;
+  font-size: 20px;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  cursor: pointer;
+}
+#footer .footer-about ul li:hover {
+  background: linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+}
+#footer .footer-about ul li:last-child {
+  margin-right: 0;
+}
+#footer .link h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  padding-bottom: 5px;
+}
+#footer .link .list-menu {
+  display: flex;
+}
+#footer .link .list-menu ul {
+  padding-left: 0;
+  margin-top: -10px;
+  padding-right: 60px;
+}
+#footer .link .list-menu ul li {
+  line-height: 40px;
+}
+#footer .link .list-menu ul li:hover a {
+  color: #a60084;
+}
+#footer .link .list-menu ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+#footer .logo-item h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  padding-bottom: 5px;
+}
+#footer .logo-item .logo-text {
+  margin-bottom: 30px;
+  position: relative;
+}
+#footer .logo-item .logo-text:last-of-type {
+  margin-bottom: 0;
+}
+#footer .logo-item .logo-text .text {
+  position: absolute;
+  bottom: 14px;
+  left: 100px;
+}
+#footer .logo-item .logo-text .text h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: -8px;
+}
+#footer-text {
+  background: #150035;
+  position: relative;
+}
+#footer-text .effect img {
+  position: absolute;
+  left: 12px;
+  top: -9px;
+  animation: animate 5s linear infinite;
+}
+#footer-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -12px;
+  width: 100%;
+  height: 3px;
+  color: #fcb100;
+  background: #000000;
+  background: -moz-linear-gradient(top, #000000 67%, #290a59 67%);
+  background: -webkit-linear-gradient(top, #000000 67%, #290a59 67%);
+  background: linear-gradient(to bottom, #000000 67%, #290a59 67%);
+}
+@keyframes animate {
+  0% {
+    top: -9px;
+    left: 0;
+  }
+  100% {
+    top: -9px;
+    left: 70%;
+  }
+}
+#footer-text .text h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 56px;
+}
+/*============================
+footer ends here 
+ =============================*/

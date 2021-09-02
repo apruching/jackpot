@@ -1,0 +1,252 @@
+@media(min-width:1200px) and (max-width:1399.98px) {
+    #banner .banner-text h1 {
+        font-size: 309px;
+    }
+    .navbar .navbar-collapse .btn:first-of-type {
+        margin-left: 31px;
+    }
+}
+
+
+/* large devie starts  */
+
+@media(min-width:992px) and (max-width:1199.98px) {
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        margin: 0 10px;
+    }
+    .navbar .navbar-collapse .btn:first-of-type {
+        margin-left: 20px;
+    }
+    #banner .banner-text h1 {
+        font-size: 256px;
+    }
+    #game .game-about .game-image .game-option {
+        padding-top: 100px;
+    }
+    #banner .banner-item .banner-text h1 {
+        font-size: 257px;
+    }
+    #banner .banner-bg {
+        position: relative;
+        top: 33px;
+        left: -8%;
+    }
+    #tournament .jumbotron .main-menu .coundown {
+        margin-right: 27px;
+    }
+}
+
+
+/* large device ends */
+
+
+/* medium device starts  */
+
+@media(min-width:768px) and (max-width:991.98px) {
+    .navbar-light .navbar-toggler {
+        background: #fff;
+    }
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .form {
+        margin-left: 239px;
+        margin-top: 46px;
+    }
+    .navbar .navbar-nav .nav-item {
+        margin: 0;
+    }
+    #game .game-about .game-image .game-option {
+        padding-top: 40px;
+    }
+    #game .game-about .game-image .game-option h4 a {
+        padding: 7px 20px;
+    }
+    #banner .banner-text h1 {
+        font-size: 228px;
+    }
+    #spin .spin-text h3 {
+        padding-top: 0;
+    }
+    .navbar .navbar-collapse .btn:first-of-type {
+        margin-left: 220px;
+    }
+    #banner .banner-bg {
+        position: relative;
+        padding-top: 0px;
+        top: 50px;
+    }
+    #banner .banner-text {
+        padding-top: 32px;
+    }
+    #banner .banner-text p {
+        font-size: 14px;
+        padding: 0 0px 0 0;
+    }
+}
+
+
+/* medium device ends here */
+
+
+/* small device starts  */
+
+@media(min-width:576px) and (max-width:767.98px) {
+    #banner .banner-bg {
+        display: none;
+    }
+    #banner .banner-item {
+        padding-top: 0;
+    }
+    .navbar .navbar-collapse .btn:first-of-type {
+        margin-left: 133px;
+    }
+    #spin .spin-text p:last-of-type {
+        margin-bottom: 57px;
+        display: none;
+    }
+    .navbar-light .navbar-toggler {
+        background: #fff;
+    }
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .form {
+        margin-left: 150px;
+    }
+    .navbar .navbar-nav .nav-item {
+        margin: 0;
+    }
+    #spin .spin-text h3 {
+        padding-top: 0;
+    }
+    #pricing .pricing-details .pricing-text {
+        margin-top: 80px;
+    }
+    #game .game-about .game-image {
+        margin-bottom: 20px;
+    }
+    @keyframes animate {
+        0% {
+            top: -9px;
+            left: 0;
+        }
+        100% {
+            top: -9px;
+            left: 55%;
+        }
+    }
+}
+
+
+/* small device ends  */
+
+
+/* extra small device start */
+
+@media(min-width:400px) and (max-width:575.98px) {
+    #banner .banner-bg {
+        display: none;
+    }
+    #banner .banner-text {
+        text-align: center;
+    }
+    #banner .banner-text p {
+        padding: 0 0px 0 0;
+    }
+    .navbar-light .navbar-toggler {
+        background: #fff;
+    }
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+    .navbar .navbar-nav .nav-item .form {
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    .navbar .navbar-nav .nav-item {
+        margin: 0;
+    }
+    .navbar .navbar-collapse .btn:first-of-type {
+        margin-left: 165px;
+        padding: 7px 19px 7px 19px;
+    }
+    .navbar .navbar-collapse .btn:last-of-type {
+        padding: 7px 19px 7px 19px;
+    }
+    #pricing .pricing-details .pricing-text {
+        margin-top: 80px;
+    }
+    #payment .pay-item ul li {
+        margin-right: 3px;
+    }
+    #tournament .jumbotron .main-menu .coundown {
+        margin-left: 0px;
+    }
+    #game .game-about .game-image {
+        margin-bottom: 20px;
+    }
+    #banner .banner-text h1 {
+        font-size: 256px;
+    }
+    @keyframes animate {
+        0% {
+            top: -9px;
+            left: 0;
+        }
+        100% {
+            top: -9px;
+            left: 30%;
+        }
+    }
+}
+
+@media(max-width:399.98px) {
+    .navbar-light .navbar-toggler {
+        background: #fff;
+        position: absolute;
+        right: 30px;
+        top: 80px;
+    }
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+    #payment .pay-item ul li {
+        margin-right: 3px;
+    }
+    #payment .pay-item ul li {
+        margin-right: 0;
+    }
+    #pricing .pricing-details .pricing-text {
+        margin-bottom: 80px;
+    }
+    #game-description .game-details .game-title .game-overlay h3 {
+        padding-top: 75px;
+    }
+    #banner .banner-text h1 {
+        font-size: 200px;
+    }
+    #payment .pay-item ul li:last-child {
+        display: none;
+    }
+    @keyframes animate {
+        0% {
+            top: -9px;
+            left: 0;
+        }
+        100% {
+            top: -9px;
+            left: 15%;
+        }
+    }
+    .navbar .navbar-collapse .btn:first-of-type {
+        margin-left: 38px;
+        padding: 7px 19px 7px 19px;
+    }
+    .navbar .navbar-collapse .btn:last-of-type {
+        padding: 7px 19px 7px 19px;
+    }
+    #banner .banner-text p {
+        padding: 0 0px 0 0;
+    }
+}

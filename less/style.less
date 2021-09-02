@@ -1,0 +1,906 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*==========================
+ common css ends
+============================*/
+
+@hf:'Anton', sans-serif;
+@pf:'Nunito', sans-serif;
+@cl1:#a60084;
+@cl2:#944bff;
+@cl3:#f4a613;
+@cl4:#570dc8;
+@bg:#150035;
+@btncl1:linear-gradient(to bottom, #a60084 0%, #ff39dc 100%);
+@btncl2:linear-gradient(to bottom, #570dc8 0%, #9e4efc 100%);
+@hovercl1:rgba(21, 0, 53, 0.85);
+
+/*============================
+ variable ends
+ =============================*/
+.ptext(){
+    font-family: @pf;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btntext(){
+    font-family: @hf;
+    font-size: 24px;
+    font-weight: 400;
+}
+.headingtext(){
+    font-family: @hf;
+    font-size: 48px;
+    font-weight: 400;
+}
+.tr(@times){
+    transition: all linear @times;
+    -moz-transition: all linear @times;
+    -o-transition: all linear @times;
+    -ms-transition: all linear @times;
+    -webkit-transition: all linear @times;
+}
+
+/*============================
+ mixing ends
+ =============================*/
+.back-to-top{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background:@cl3;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+}
+/*==================back-to-top end=====================*/
+.nav-fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: @cl3 !important;
+    animation: smoth linear 0.5s;
+    padding-top: 10px;
+  }
+  @keyframes smoth {
+    0% {
+      top: -50px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+/*==================nav-fix end=====================*/
+
+/*==================navbar starts=====================*/
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 10px;
+    background:@bg;
+    z-index: 99999;
+    .navbar-collapse{
+        margin-top: 60px;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-family: @pf;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color:@cl2;
+                    margin:0 27px;
+                    .tr(.4s);
+                    &:hover{
+                        color:@cl1;
+                    }
+                    &.active{
+                        color:@cl1;
+                    }
+                }
+                span{
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .btn{
+            font-family: @pf;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 500;
+            display:inline-block;
+            &:hover{
+                &:first-of-type{
+                    background:@btncl2;
+                    box-shadow: 0px 4px 0px 0px hsla(264, 100%, 65%, 0.8);
+                }
+                &:last-of-type{
+                    box-shadow: 0px 4px 0px 0px rgba(107, 4, 87, 0.8);
+                    background:@btncl1;
+                }
+            }
+            &:first-of-type{
+                margin-left: 63px;
+                margin-right: 20px;
+                padding:15px 30px 14px 30px;
+                background:@btncl1;
+                color:#ffff;
+                border-radius: 4px;
+                text-shadow: 3px 0px 4px #fff;
+                box-shadow: 0px 4px 0px 0px rgba(107, 4, 87, 0.8);
+                .tr(.4s);
+            }
+            &:last-of-type{
+                .tr(.4s);
+                padding:15px 30px 14px 30px;
+                color:#ffff;
+                border-radius: 4px;
+                text-shadow: 3px 0px 4px #fff;
+                background:@btncl2;
+                box-shadow: 0px 4px 0px 0px hsla(264, 100%, 65%, 0.8);
+            }
+        }
+    }
+}
+/*==================navbar ends=====================*/
+
+/*==================banner starts=====================*/
+#banner{
+    padding-top: 170px;
+    padding-bottom: 250px;
+    background:@bg;
+    position: relative;
+    .banner-bg{
+        position:absolute;
+        top:170px;
+        left:0;
+    }
+    .banner-text{
+        padding-top:95px;
+        h4{
+            font-family: @pf;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:#fff;
+        }
+        h1{
+            font-family: @hf;
+            font-size: 331px;
+            color:@cl3;
+            background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 25px #4d0148);
+            margin-top: -46px;
+            margin-bottom: 0;
+            margin-bottom: -28px;
+        }
+        p{
+            .ptext();
+            color:#fff;
+            text-align: center;
+            padding:0 50px 0 0;
+        }
+        h3{
+            text-align: center;
+            a{
+                font-family: @hf;
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color:#fff;
+                padding:15px 30px 14px 30px;
+                color:#ffff;
+                border-radius: 4px;
+                text-shadow: 1px 0px 1px #fff;
+                background:@btncl2;
+                box-shadow: 0px 4px 0px 0px hsla(264, 100%, 65%, 0.8);
+                .tr(0.4s);
+                &:hover{
+                    box-shadow: 0px 4px 0px 0px rgba(107, 4, 87, 0.8);
+                    background:@btncl1;
+                }
+            }
+        }
+    }
+}
+/*==================banner ends=====================*/
+
+/*==================game starts=====================*/
+#game{
+    position: relative;
+    background:#0b001b;
+    padding-bottom: 100px;
+    .game-item{
+        filter: drop-shadow(0px 6px 0px rgba(58, 0, 144, 1));
+        
+            .flow{
+                -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 96%);
+                clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 96%);
+                position: absolute;
+                top: -140px;
+                left: 0;
+                width: 100%;
+                .border-shadow{
+                    -webkit-box-shadow: inset 10px 0px 50px 0px rgba(31, 7, 67, 0.5);
+                    -moz-box-shadow: inset 10px 0px 50px 0px rgba(31, 7, 67, 0.5);
+                    box-shadow: inset 10px 0px 50px 0px rgba(31, 7, 67, 0.5);
+                    background: @cl2;
+                    background: -moz-linear-gradient(left, @cl2 0%, @cl4 100%);
+                    background: -webkit-linear-gradient(left, @cl2 0%, @cl4 100%);
+                    background: linear-gradient(to right, @cl2 0%, @cl4 100%);
+                    padding: 45px 15px;
+                    filter: drop-shadow(30px 10px 4px #4444dd);
+                .game-content{
+                    h3{
+                            color: #fcb100;
+                            background: -webkit-linear-gradient(top, #fdb125 45%, #e07e1e 48%, #fcb100 85%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-size: 50px;
+                            font-weight: 400;
+                            font-family: @hf;
+                            margin-bottom: 18px;
+                            text-align: center;
+                    }
+                    h4{
+                            color: #ffffff;
+                            font-size: 32px;
+                            font-weight: 400;
+                            font-family: @hf;
+                            margin-bottom: 10px;
+                            text-shadow: 5px 5px 0px rgba(88, 19, 184, .8);
+                            text-align: center;
+                            text-transform: capitalize;
+                    }
+                    p{
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family:@pf;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .game-heading{
+        padding-top:100px;
+        h4{
+            font-size: 48px;
+            font-weight: 400;
+            font-family: @hf;
+            background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 25px #4d0148);
+            margin: 160px 0 60px 0;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+    .game-about{
+        .game-image{
+            position: relative;
+            &:hover{
+                .game-option{
+                    opacity: 1;
+                } 
+            }
+            .game-option{
+                width:101%;
+                height:101%;
+                background:rgba(0, 0, 0, 0.85);
+                position:absolute;
+                top:50%;
+                left:50%;
+                opacity: 0;
+                transform: translate(-50%, -50%);
+                .tr(0.4s);
+                padding-top: 160px;
+                h3{
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: 400;
+                    font-family: @hf;
+                    padding-bottom: 50px;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+                h4{
+                    text-align: center;
+                    a{
+                        padding: 14px 30px;
+                        background: #9e4efc;
+                        background: -moz-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+                        background: -webkit-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+                        background: linear-gradient(to bottom, #9e4efc 0%, #570dc8 100%);
+                        border-radius: 5px;
+                        color: #ffffff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-family: 'Anton', sans-serif;
+                        -webkit-box-shadow: 0px 6px 0px 0px rgba(58, 0, 144, 1);
+                        -moz-box-shadow: 0px 6px 0px 0px rgba(58, 0, 144, 1);
+                        box-shadow: 0px 6px 0px 0px rgba(58, 0, 144, 1);
+                        text-shadow: 5px 5px 0px rgba(88, 19, 184, .8);
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}
+/*==================game ends=====================*/
+
+
+  /*============================
+spin starts here 
+ =============================*/
+#spin{
+    background:@bg;
+    padding-top: 97px;
+    padding-bottom: 27px;
+    .spin-image{
+
+    }
+    .spin-text{
+        h3{
+            font-family: @hf;
+            font-size: 48px;
+            color:@cl3;
+            font-weight: 400;
+            text-transform: capitalize;
+            background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 25px #4d0148);
+            padding-top: 80px;
+            padding-bottom: 30px;
+            margin-bottom: 0;
+        }
+        p{
+            .ptext();
+            color:#fff;
+            line-height: 26px;
+            padding-bottom:5px;
+            &:last-of-type{
+                margin-bottom: 57px;
+            }
+        }
+        a{
+            .btntext();
+            text-transform: capitalize;
+            color:#fff;
+            padding:20px 30px 14px 30px;
+            background:@btncl2;
+            border-radius: 5px;
+        }
+    }
+}
+/*============================
+spin ends here 
+ =============================*/
+
+/*============================
+pricing starts here 
+ =============================*/
+#pricing{
+    padding-top: 97px;
+    padding-bottom: 80px;
+    background:#0b001b;
+    .pricing-heading{
+        h3{
+            .headingtext();
+            color:@cl3;
+            text-transform: capitalize;
+            background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 25px #4d0148);
+            margin-bottom: 0;
+            padding-bottom: 88px;
+        }
+    }
+    .pricing-details{
+        .pricing-text{
+            background:@btncl2;
+            position:relative;
+            .tr(.4s);
+            &:hover{
+                transform: translateY(10%);
+                .feature{
+                    opacity: 1;
+                }
+                .btn{
+                    a{
+                        background:@btncl1;
+                    }
+                }
+            }
+            .feature{
+                opacity: 0;
+                position:absolute;
+                left:50%;
+                top: -70px;
+                transform: translateX(-50%);
+                background:@btncl1;
+                width:100%;
+                border-radius: 5px;
+                .tr(0.4s);
+                h3{
+                    font-family: @pf;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color:#fff;
+                    text-transform: capitalize;
+                    padding:20px 0;
+                }
+            }
+            h3{
+                font-family: @hf;
+                font-size: 32px;
+                text-transform: capitalize;
+                padding-top:54px;
+            }
+            h4{
+                font-family: @pf;
+                font-size: 50px;
+                font-weight: 700;
+                margin-top: -2px;
+                margin-bottom: -8px;
+            }
+            h5{
+                span{
+                    font-size: 14px;
+                    font-family: @pf;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                font-size: 14px;
+                font-family: @pf;
+                font-weight: 400;
+                text-transform: capitalize;
+                margin-bottom: 0;
+                padding-bottom:30px;
+                position:relative;
+                &::before{
+                    content:"";
+                    width:100%;
+                    height:1px;
+                    border:1px solid #0b001b;
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                }
+            }
+            ul{
+                margin-bottom: 0;
+                padding-left: 0;
+                padding-bottom:40px;
+                li{
+                    font-family: @pf;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    line-height: 40px;
+                }
+            }
+            .btn{
+                opacity:1;
+                position:absolute;
+                left:50%;
+                bottom: -27px;
+                transform: translateX(-50%);
+
+                a{
+                    text-decoration: none;
+                    padding: 14px 30px;
+                    background: #9e4efc;
+                    background: -moz-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+                    background: -webkit-linear-gradient(top, #9e4efc 0%, #570dc8 100%);
+                    background: linear-gradient(to bottom, #9e4efc 0%, #570dc8 100%);
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: 'Anton', sans-serif;
+                    -webkit-box-shadow: 0px 6px 0px 0px rgba(58, 0, 144, 1);
+                    -moz-box-shadow: 0px 6px 0px 0px rgba(58, 0, 144, 1);
+                    box-shadow: 0px 6px 0px 0px rgba(58, 0, 144, 1);
+                    text-shadow: 5px 5px 0px rgba(88, 19, 184, .8);
+                    display: inline-block;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+/*============================
+pricing ends here 
+ =============================*/
+
+  /*============================
+tournament starts here 
+ =============================*/
+ .border-line{
+     border:1px solid @cl3;
+     height:140px;
+ }
+#tournament{
+    padding-top:98px;
+    padding-bottom: 150px;
+    background-color:@bg!important;
+    .tour-text{
+        h3{
+            font-family: @hf;
+            font-size: 40px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:@cl3;
+        }
+        .accordion{
+            .accordion-item{
+                background:transparent !important;
+               
+                &.add-border{
+                    border:1px solid @cl3;
+                }
+            
+                .accordion-header{
+                 
+                    .accordion-button{
+                        font-family: @pf;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        color:#ffff;
+                        background:transparent;
+                       
+                    }
+                    .accordion-button:focus {
+                        z-index: 3;
+                        border:none;
+                        box-shadow:none;
+                    }
+                }
+                .accordion-body{
+                    p{
+                        font-family: @pf;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+    .jumbotron{
+       
+        .tour-text{
+            h3{
+                font-family: @hf;
+                font-size: 40px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color:@cl3;
+            }
+        }
+        .main-menu{
+            
+        }
+        .get-nicer{
+            overflow: auto;
+            height: 280px;
+            .nice-wrapper{
+                .idol-name{
+                    h3{
+                        font-size: 16px;
+                        font-family: @pf;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        color:#fff;
+                    }
+                }
+                .rate{
+                    h3{
+                        font-size: 16px;
+                        font-family: @pf;
+                        font-weight: 400;
+                        padding-right: 20px;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .coun_text{
+           h4{
+            padding-top: 36px;
+            font-family: @pf;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 600;
+           }
+        }
+        .main-menu{
+            display:flex;
+            margin-bottom: 20px;
+            .coundown{
+                // margin-top: 65px;
+                border: 1px solid #fcb100;
+                margin-right: 70px;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+                margin-left: -20px;
+                span{
+                    color: #fcb100;
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: 'Nunito', sans-serif;
+                    
+                }
+                p{
+                    color: #fcb100;
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: 'Nunito', sans-serif;
+                    padding: 5px 10px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+  /*============================
+tournament starts here 
+ =============================*/
+
+
+ /*============================
+payment starts here 
+ =============================*/
+#payment{
+    padding-bottom: 35px;
+    background:@btncl2;
+    padding-top: 32px;
+    .pay-text{
+        h3{
+            font-family: @hf;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:#fff;
+        }
+        form{
+            input{
+                width:80%;    
+                outline:none;
+                padding:5px; 
+                border:1px solid #0b001b;
+                background:transparent;     
+            }
+            button{
+                background:transparent;
+                font-size: 17px;
+                outline: none;
+                border:1px solid #0b001b;
+                padding:3px;
+                i{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .pay-item{
+        h3{
+            font-family: @hf;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:#fff;
+        }
+        ul{
+            display:flex;
+            padding-left: 0;
+            li{
+                margin-right: 13px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+ /*============================
+payment ends here 
+ =============================*/
+
+  /*============================
+footer starts  here 
+ =============================*/
+#footer{
+    padding-top: 57px;
+    padding-bottom: 68px;
+    background:@bg;
+    .footer-about{
+        h3{
+            font-family: @hf;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:#fff;
+            padding-bottom: 5px;
+        }
+        p{
+            .ptext();
+            color:#fff;
+            padding-right: 20px;
+            line-height: 26px;
+        }
+        ul{
+            display:flex;
+            padding-left: 0;
+            padding-top: 12px;
+            li{
+                color:#fff;
+                width:50px;
+                height:53px;
+                background:@btncl2;
+                margin-right: 15px;
+                text-align: center;
+                line-height: 53px;
+                font-size: 20px;
+                .tr(0.4s);
+                cursor:pointer;
+                &:hover{
+                    background:@btncl1;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .link{
+        h3{
+            font-family: @hf;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:#fff;
+            padding-bottom: 5px; 
+        }
+        .list-menu{
+            display:flex;
+            ul{
+                padding-left: 0;
+                margin-top: -10px;
+                padding-right: 60px;
+                li{
+                    line-height: 40px;
+                    &:hover{
+                        a{
+                            color:@cl1;
+                        }
+                    }
+                    a{
+                        color:#fff;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-family: @pf;
+                        font-weight: 600;
+                        .tr(0.4s);
+                    }
+                }
+            }
+        }
+    }
+    .logo-item{
+        h3{
+            font-family: @hf;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:#fff;
+            padding-bottom: 5px;
+        }
+        .logo-text{
+            margin-bottom: 30px;
+            position:relative;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            .text{
+                position:absolute;
+                bottom:14px;
+                left:100px;
+                h3{
+                    font-family: @pf;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color:#fff;
+                    margin-bottom: 0;
+                    margin-top: -8px;
+                }
+            }
+        }
+    }
+}
+
+#footer-text{
+    background:@bg;
+    position: relative;
+    .effect{  
+       img{
+        position: absolute;
+        left:12px;
+        top:-9px;
+        animation:animate 5s linear infinite;
+       }
+     
+    }
+    &::after{ 
+        content: '';
+        position:absolute;
+        left: 0;
+        top: -12px;   
+        width: 100%;
+        height: 3px;
+        color: #fcb100;
+        background: #000000;
+        background: -moz-linear-gradient(top, #000000 67%, #290a59 67%);
+        background: -webkit-linear-gradient(top, #000000 67%, #290a59 67%);
+        background: linear-gradient(to bottom, #000000 67%, #290a59 67%);
+    }
+    @keyframes animate {
+        0% {
+            top:-9px;
+            left: 0;
+        }
+   
+        100% {
+            top:-9px;
+            left: 70%;
+        }
+    }
+   
+    .text{
+        h3{
+            font-family: @pf;
+            font-size: 16px;
+            text-transform: capitalize;
+            color:#fff;
+            line-height: 56px;
+        }
+    }
+    
+}
+  /*============================
+footer ends here 
+ =============================*/
+
+ 
